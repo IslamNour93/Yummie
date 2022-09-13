@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		395B8AC828CFC3DA00970E9F /* OnBoardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B8AC728CFC3DA00970E9F /* OnBoardingController.swift */; };
+		395B8ACA28CFC8CB00970E9F /* OnBoardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B8AC928CFC8CB00970E9F /* OnBoardingSlide.swift */; };
+		395B8ACD28CFCF3900970E9F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 395B8ACC28CFCF3900970E9F /* Kingfisher */; };
+		395B8ACF28CFD23400970E9F /* OnBoardingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B8ACE28CFD23400970E9F /* OnBoardingCollectionCell.swift */; };
 		397B259928CFBA2C00CF4595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B259828CFBA2C00CF4595 /* AppDelegate.swift */; };
 		397B259B28CFBA2C00CF4595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B259A28CFBA2C00CF4595 /* SceneDelegate.swift */; };
 		397B259D28CFBA2C00CF4595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B259C28CFBA2C00CF4595 /* ViewController.swift */; };
@@ -16,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		395B8AC728CFC3DA00970E9F /* OnBoardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingController.swift; sourceTree = "<group>"; };
+		395B8AC928CFC8CB00970E9F /* OnBoardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlide.swift; sourceTree = "<group>"; };
+		395B8ACE28CFD23400970E9F /* OnBoardingCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionCell.swift; sourceTree = "<group>"; };
 		397B259528CFBA2C00CF4595 /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		397B259828CFBA2C00CF4595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		397B259A28CFBA2C00CF4595 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +38,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395B8ACD28CFCF3900970E9F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		395B8AC628CFC3A000970E9F /* OnBoardingController */ = {
+			isa = PBXGroup;
+			children = (
+				395B8AC728CFC3DA00970E9F /* OnBoardingController.swift */,
+				395B8ACE28CFD23400970E9F /* OnBoardingCollectionCell.swift */,
+			);
+			path = OnBoardingController;
+			sourceTree = "<group>";
+		};
 		397B258C28CFBA2B00CF4595 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +73,9 @@
 		397B259728CFBA2C00CF4595 /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
+				397B25AE28CFBA8300CF4595 /* Controllers */,
+				397B25AD28CFBA7A00CF4595 /* Views */,
+				397B25AC28CFBA7300CF4595 /* Models */,
 				397B259828CFBA2C00CF4595 /* AppDelegate.swift */,
 				397B259A28CFBA2C00CF4595 /* SceneDelegate.swift */,
 				397B259C28CFBA2C00CF4595 /* ViewController.swift */,
@@ -65,6 +85,29 @@
 				397B25A628CFBA2F00CF4595 /* Info.plist */,
 			);
 			path = Yummie;
+			sourceTree = "<group>";
+		};
+		397B25AC28CFBA7300CF4595 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				395B8AC928CFC8CB00970E9F /* OnBoardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		397B25AD28CFBA7A00CF4595 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		397B25AE28CFBA8300CF4595 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				395B8AC628CFC3A000970E9F /* OnBoardingController */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,9 @@
 			dependencies = (
 			);
 			name = Yummie;
+			packageProductDependencies = (
+				395B8ACC28CFCF3900970E9F /* Kingfisher */,
+			);
 			productName = Yummie;
 			productReference = 397B259528CFBA2C00CF4595 /* Yummie.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 397B258C28CFBA2B00CF4595;
+			packageReferences = (
+				395B8ACB28CFCF3900970E9F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 397B259628CFBA2C00CF4595 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395B8AC828CFC3DA00970E9F /* OnBoardingController.swift in Sources */,
 				397B259D28CFBA2C00CF4595 /* ViewController.swift in Sources */,
 				397B259928CFBA2C00CF4595 /* AppDelegate.swift in Sources */,
 				397B259B28CFBA2C00CF4595 /* SceneDelegate.swift in Sources */,
+				395B8ACF28CFD23400970E9F /* OnBoardingCollectionCell.swift in Sources */,
+				395B8ACA28CFC8CB00970E9F /* OnBoardingSlide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		395B8ACB28CFCF3900970E9F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		395B8ACC28CFCF3900970E9F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 395B8ACB28CFCF3900970E9F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 397B258D28CFBA2B00CF4595 /* Project object */;
 }
