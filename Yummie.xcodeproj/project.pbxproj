@@ -13,10 +13,12 @@
 		395B8ACF28CFD23400970E9F /* OnBoardingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B8ACE28CFD23400970E9F /* OnBoardingCollectionCell.swift */; };
 		397B259928CFBA2C00CF4595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B259828CFBA2C00CF4595 /* AppDelegate.swift */; };
 		397B259B28CFBA2C00CF4595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B259A28CFBA2C00CF4595 /* SceneDelegate.swift */; };
-		397B259D28CFBA2C00CF4595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B259C28CFBA2C00CF4595 /* ViewController.swift */; };
+		397B259D28CFBA2C00CF4595 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B259C28CFBA2C00CF4595 /* HomeController.swift */; };
 		397B25A028CFBA2C00CF4595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397B259E28CFBA2C00CF4595 /* Main.storyboard */; };
 		397B25A228CFBA2F00CF4595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397B25A128CFBA2F00CF4595 /* Assets.xcassets */; };
 		397B25A528CFBA2F00CF4595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397B25A328CFBA2F00CF4595 /* LaunchScreen.storyboard */; };
+		39EEFA7828D2781E00B17090 /* FoodCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EEFA7628D2781E00B17090 /* FoodCategoryCell.swift */; };
+		39EEFA7928D2781E00B17090 /* FoodCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39EEFA7728D2781E00B17090 /* FoodCategoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +28,13 @@
 		397B259528CFBA2C00CF4595 /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		397B259828CFBA2C00CF4595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		397B259A28CFBA2C00CF4595 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		397B259C28CFBA2C00CF4595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		397B259C28CFBA2C00CF4595 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		397B259F28CFBA2C00CF4595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		397B25A128CFBA2F00CF4595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		397B25A428CFBA2F00CF4595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		397B25A628CFBA2F00CF4595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39EEFA7628D2781E00B17090 /* FoodCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCell.swift; sourceTree = "<group>"; };
+		39EEFA7728D2781E00B17090 /* FoodCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,6 @@
 				397B25AC28CFBA7300CF4595 /* Models */,
 				397B259828CFBA2C00CF4595 /* AppDelegate.swift */,
 				397B259A28CFBA2C00CF4595 /* SceneDelegate.swift */,
-				397B259C28CFBA2C00CF4595 /* ViewController.swift */,
 				397B259E28CFBA2C00CF4595 /* Main.storyboard */,
 				397B25A128CFBA2F00CF4595 /* Assets.xcassets */,
 				397B25A328CFBA2F00CF4595 /* LaunchScreen.storyboard */,
@@ -98,6 +101,7 @@
 		397B25AD28CFBA7A00CF4595 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				39EEFA7428D277DB00B17090 /* HomeCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,8 +110,34 @@
 			isa = PBXGroup;
 			children = (
 				395B8AC628CFC3A000970E9F /* OnBoardingController */,
+				39EEFA7328D2368200B17090 /* HomeController */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		39EEFA7328D2368200B17090 /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				397B259C28CFBA2C00CF4595 /* HomeController.swift */,
+			);
+			path = HomeController;
+			sourceTree = "<group>";
+		};
+		39EEFA7428D277DB00B17090 /* HomeCells */ = {
+			isa = PBXGroup;
+			children = (
+				39EEFA7528D277E800B17090 /* FoodCategoryCell */,
+			);
+			path = HomeCells;
+			sourceTree = "<group>";
+		};
+		39EEFA7528D277E800B17090 /* FoodCategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				39EEFA7628D2781E00B17090 /* FoodCategoryCell.swift */,
+				39EEFA7728D2781E00B17090 /* FoodCategoryCell.xib */,
+			);
+			path = FoodCategoryCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +207,7 @@
 				397B25A528CFBA2F00CF4595 /* LaunchScreen.storyboard in Resources */,
 				397B25A228CFBA2F00CF4595 /* Assets.xcassets in Resources */,
 				397B25A028CFBA2C00CF4595 /* Main.storyboard in Resources */,
+				39EEFA7928D2781E00B17090 /* FoodCategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,10 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				395B8AC828CFC3DA00970E9F /* OnBoardingController.swift in Sources */,
-				397B259D28CFBA2C00CF4595 /* ViewController.swift in Sources */,
+				397B259D28CFBA2C00CF4595 /* HomeController.swift in Sources */,
 				397B259928CFBA2C00CF4595 /* AppDelegate.swift in Sources */,
 				397B259B28CFBA2C00CF4595 /* SceneDelegate.swift in Sources */,
 				395B8ACF28CFD23400970E9F /* OnBoardingCollectionCell.swift in Sources */,
+				39EEFA7828D2781E00B17090 /* FoodCategoryCell.swift in Sources */,
 				395B8ACA28CFC8CB00970E9F /* OnBoardingSlide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
